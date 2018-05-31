@@ -61,16 +61,16 @@
 <link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/fe-icons.jpg?v=6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/fe-icon.jpg?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/fe-icons.jpg?v=6.3.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/fe-icon.jpg?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/fe-icons.jpg?v=6.3.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/fe-icon.jpg?v=6.3.0">
 
 
-  <link rel="mask-icon" href="/images/fe-icons.jpg?v=6.3.0" color="#222">
+  <link rel="mask-icon" href="/images/fe-icon.jpg?v=6.3.0" color="#222">
 
 
 
@@ -109,15 +109,16 @@
 
 
   <meta name="description" content="引言在日常开发中,往往需要定制一些满足特殊需求的JQ插件,所以今天就来说一说怎样开发JQ插件. 介绍 JQ插件是用来扩展JQ原型对象的一个方法  插件的使用方式就是JQ对象方法的调用   JQ内部定义了一个jQuery.fn对象,jQuery.fn = jQuery.prototype. 也就是说 jQuery.fn 对象是jQuery的原型对象,方法定义在jQuery.fn对象上. 基础jQ插件">
+<meta name="keywords" content="插件,开发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端说">
+<meta property="og:title" content="JQ插件开发">
 <meta property="og:url" content="http://yoursite.com/2018/05/30/jqextends/index.html">
 <meta property="og:site_name" content="前端说">
 <meta property="og:description" content="引言在日常开发中,往往需要定制一些满足特殊需求的JQ插件,所以今天就来说一说怎样开发JQ插件. 介绍 JQ插件是用来扩展JQ原型对象的一个方法  插件的使用方式就是JQ对象方法的调用   JQ内部定义了一个jQuery.fn对象,jQuery.fn = jQuery.prototype. 也就是说 jQuery.fn 对象是jQuery的原型对象,方法定义在jQuery.fn对象上. 基础jQ插件">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-30T09:46:59.389Z">
+<meta property="og:updated_time" content="2018-05-31T08:59:02.947Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前端说">
+<meta name="twitter:title" content="JQ插件开发">
 <meta name="twitter:description" content="引言在日常开发中,往往需要定制一些满足特殊需求的JQ插件,所以今天就来说一说怎样开发JQ插件. 介绍 JQ插件是用来扩展JQ原型对象的一个方法  插件的使用方式就是JQ对象方法的调用   JQ内部定义了一个jQuery.fn对象,jQuery.fn = jQuery.prototype. 也就是说 jQuery.fn 对象是jQuery的原型对象,方法定义在jQuery.fn对象上. 基础jQ插件">
 
 
@@ -135,7 +136,7 @@
   };
 </script>
 
-  <title> | 前端说</title>
+  <title>JQ插件开发 | 前端说</title>
   
 
 
@@ -313,7 +314,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RVon">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/fe-icons.jpg">
+      <meta itemprop="image" content="/images/fe-icon.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -325,7 +326,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">JQ插件开发
               
             
           </h1>
@@ -350,16 +351,53 @@
                 
               
 
-              <time title="创建时间：2018-05-30 17:46:55 / 修改时间：17:46:59" itemprop="dateCreated datePublished" datetime="2018-05-30T17:46:55+08:00">2018-05-30</time>
+              <time title="创建时间：2018-05-30 17:46:55" itemprop="dateCreated datePublished" datetime="2018-05-30T17:46:55+08:00">2018-05-30</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-05-31 16:59:02" itemprop="dateModified" datetime="2018-05-31T16:59:02+08:00">2018-05-31</time>
               
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/js/JQ/" itemprop="url" rel="index"><span itemprop="name">JQ</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -436,6 +474,14 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/插件/" rel="tag"># 插件</a>
+          
+            <a href="/tags/开发/" rel="tag"># 开发</a>
+          
+        </div>
       
 
       
@@ -518,7 +564,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/fe-icons.jpg"
+                src="/images/fe-icon.jpg"
                 alt="RVon" />
             
               <p class="site-author-name" itemprop="name">RVon</p>
@@ -547,7 +593,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -562,7 +610,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
